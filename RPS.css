@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#001B3b;
+    background: #001b3b;;
 }
 
 /*ROCK*/
@@ -32,12 +32,28 @@ body{
     width: 255px;
     height: 355px;
     border-radius: 1em;
-    background: linear-gradient(50deg,#004ff9,#fff94c);
+    background: linear-gradient(50deg,#772b2b,#e0840a);
     overflow:hidden;
+ }
+
+ .rock-lights::before{
+    content: "";
+    position: absolute;
+    width:450px;
+    height: 35px;
+    top:0;
+    right:35px;
+    transition:3s;
+    background: linear-gradient(50deg,#29eb80,#48ff00);
+    transform: rotate(-45deg)translate(0,-100px);
  }
 
  .rock:hover{
     color: #33dfa5;
+ }
+
+.rock-lights:hover::before{
+    animation: effect 3s;
  }
 
  /*PAPER*/
@@ -64,12 +80,28 @@ body{
     width: 255px;
     height: 355px;
     border-radius: 1em;
-    background: linear-gradient(50deg,#fc00ff,#00dbde);
+    background: linear-gradient(50deg,#dbd9db,#00dbde);
     overflow:hidden;
 }
 
+.paper-lights::before{
+    content: "";
+    position: absolute;
+    width:450px;
+    height: 35px;
+    top:0;
+    right:35px;
+    transition:3s;
+    background: linear-gradient(50deg,#ff00ff,#ff029e);
+    transform: rotate(-45deg)translate(0,-100px);
+ }
+
 .paper:hover{
-    color: #33dfa5;
+    color: #f701ea;
+ }
+
+.paper-lights:hover::before{
+    animation: effect 3s;
  }
 
 
@@ -101,14 +133,27 @@ body{
     overflow:hidden;
  }
 
+ .scissor-lights::before{
+    content: "";
+    position: absolute;
+    width:450px;
+    height: 35px;
+    top:0;
+    right:35px;
+    transition:3s;
+    background: linear-gradient(50deg,#00ff59,#02b3ff);
+    transform: rotate(-45deg)translate(0,-100px);
+ }
+
  .scissor:hover{
     color: #ee4917;
  }
 
+ .scissor-lights:hover::before{
+    animation: effect 3s;
+ }
 
-
-
-
+/*the magic*/
  @keyframes effect{
     100%{
         transform:rotate(-45deg) translate(0,450px)
