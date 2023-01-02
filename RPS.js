@@ -78,7 +78,7 @@ function playRound(playerSelection, computerSelection) {
 **/ 
 
 
-function game(){
+/*function game(){
 var scoreCounter = 0;
 var compScoreCounter = 0;
 var roundCounter = 1;
@@ -111,4 +111,4 @@ var roundCounter = 1;
     }
 }
  
-console.log(game());
+console.log(game());*/

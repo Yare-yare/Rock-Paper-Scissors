@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#001B3b;
+}
+
+/*ROCK*/
+.Rock{
+  display: grid;
+  place-items: center;
+  width: 247px;
+  height: 347px;
+  background: #171614;
+  border-radius: .08em;
+  z-index:1;
+  color: #858585;
+  overflow: hidden;
+  padding: 1em; 
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.rock-lights{
+    display:grid;
+    place-items: center;
+    position: relative;
+    width: 255px;
+    height: 355px;
+    border-radius: 1em;
+    background: linear-gradient(50deg,#004ff9,#fff94c);
+    overflow:hidden;
+ }
+
+ .rock:hover{
+    color: #33dfa5;
+ }
+
+ /*PAPER*/
+.Paper{
+    display: grid;
+    place-items: center;
+    width: 247px;
+    height: 347px;
+    background: #171614;
+    border-radius: .08em;
+    z-index:1;
+    color: #858585;
+    overflow: hidden;
+    padding: 1em; 
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.paper-lights{
+    display:grid;
+    place-items: center;
+    position: relative;
+    width: 255px;
+    height: 355px;
+    border-radius: 1em;
+    background: linear-gradient(50deg,#fc00ff,#00dbde);
+    overflow:hidden;
+}
+
+.paper:hover{
+    color: #33dfa5;
+ }
+
+
+/*SCISSOR*/
+.Scissor{
+    display: grid;
+    place-items: center;
+    width: 247px;
+    height: 347px;
+    background: #171614;
+    border-radius: .08em;
+    z-index:1;
+    color: #858585;
+    overflow: hidden;
+    padding: 1em; 
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+ }
+
+ .scissor-lights{
+    display:grid;
+    place-items: center;
+    position: relative;
+    width: 255px;
+    height: 355px;
+    border-radius: 1em;
+    background: linear-gradient(50deg,#833ab4,#fd1d1d,#fcb045);
+    overflow:hidden;
+ }
+
+ .scissor:hover{
+    color: #ee4917;
+ }
+
+
+
+
+
+ @keyframes effect{
+    100%{
+        transform:rotate(-45deg) translate(0,450px)
+    }
+ }
+  
+ 
+ /*wanted to create space between the cards*/
+#parent-id{
+    display: flex;
+    justify-content: space-between;
+   }
+
+ .header{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 50px;
+    background-color: bisque;
+ }
+
+ /*the words found in each button*/
+ .rock{
+    font-size: 40px;
+    cursor: pointer;
+ }
+
+ .paper{
+    font-size: 40px;
+ }
+
+ .scissor{
+    font-size: 40px;
+ }
+
+ /*chart styles*/
+ .chart{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+ }
+
+
+
+ 
