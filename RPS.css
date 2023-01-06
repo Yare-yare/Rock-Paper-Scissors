@@ -7,6 +7,9 @@
 
 body{
     background: #001b3b;;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*ROCK*/
