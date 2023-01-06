@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src = '../Rock-Paper-Scissors/RPS.js' defer></script>   
     <link rel = "Stylesheet" href="../Rock-Paper-Scissors/RPS.css">
 </head>
 <body>
   <div class = "chart">
-    <div class = "chart-1">Will the AI beat you?</div>
+    <div class = "chart-1">Will the AI beat you..?</div>
     <div class = "chart-2">Or are you confident that you'll crush it?</div>
     <div class = "chart-3">Show your strength ye tarnished!</div>
   </div> 
   
-  <div class = "header">Click On Card Wisely!</div>
+  <div class = "header">Choose Card Wisely! (Five Rounds)</div>
 
   <div id = "parent-id">
     <div class = "rock-lights">
@@ -29,11 +28,27 @@
     <div class = "scissor-lights">
         <button class = "Scissor"><div class = "scissor">Scissor</div></button>
     </div>
+   </div>
+    <div class = tally-card>
+        <div class = "card"></div> 
+        <div class = tally></div>
+    </div>
+   <div class = "wins-and-loses">
+        <div class = "you">
+            <div class  = "wins">Your Wins:</div>
+        </div>
+        <div class = "ai">
+            <div class  = "loses">Ai's Wins:</div>
+        </div>
+        <div class = tie_>
+            <div class = "tie">
+                Tie:
+            </div>
+        </div>
+    <!--This should be an event, so that it can announce the winner after five rounds of playing.-->
+        <div class = "roundCounter">
+            Round:
+        </div>
   </div>
-
- 
-
-
-
 </body>
 </html>
