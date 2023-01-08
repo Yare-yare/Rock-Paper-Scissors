@@ -178,8 +178,7 @@ body{
 /*Need the header to be touching the top*/
 .header{
    top:0%;
-   margin-top: 100px;
-   margin-bottom: 50px;
+   margin-top: 0.5px;
    justify-content: center;
    align-items: center;
    font-family:'Times New Roman', Times, serif;
@@ -282,9 +281,9 @@ body{
  font-size: 20px;
  height: 200px;
  width: 300px;
- border-color: rgb(184, 68, 22);
+ border-color: rgb(255, 0, 0);
  display: flex;
- border-style: dotted;
+ border-style: solid;
  margin-top: -70px;
  justify-content: center;
  align-items: center;
