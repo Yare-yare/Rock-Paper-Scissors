@@ -1,299 +1,299 @@
 *{  display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+   flex-direction: column;
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
 }
 
 body{
-    background: #001b3b;;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+   background: #001b3b;;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
 }
 
 /*ROCK*/
 .Rock{
-  display: grid;
-  place-items: center;
-  width: 247px;
-  height: 347px;
-  background: #171614;
-  border-radius: .08em;
-  z-index:1;
-  color: #858585;
-  overflow: hidden;
-  padding: 1em; 
-  text-align: center;
-  cursor: pointer;
-  transition: .5s ease;
+ display: grid;
+ place-items: center;
+ width: 247px;
+ height: 347px;
+ background: #171614;
+ border-radius: .08em;
+ z-index:1;
+ color: #858585;
+ overflow: hidden;
+ padding: 1em; 
+ text-align: center;
+ cursor: pointer;
+ transition: .5s ease;
 }
 
 .rock-lights{
-    display:grid;
-    place-items: center;
-    position: relative;
-    width: 255px;
-    height: 355px;
-    border-radius: 1em;
-    background: linear-gradient(50deg,#772b2b,#e0840a);
-    overflow:hidden;
- }
+   display:grid;
+   place-items: center;
+   position: relative;
+   width: 255px;
+   height: 355px;
+   border-radius: 1em;
+   background: linear-gradient(50deg,#772b2b,#e0840a);
+   overflow:hidden;
+}
 
- .rock-lights::before{
-    content: "";
-    position: absolute;
-    width:450px;
-    height: 35px;
-    top:0;
-    right:35px;
-    transition:3s;
-    background: linear-gradient(50deg,#29eb80,#48ff00);
-    transform: rotate(-45deg)translate(0,-100px);
- }
+.rock-lights::before{
+   content: "";
+   position: absolute;
+   width:450px;
+   height: 35px;
+   top:0;
+   right:35px;
+   transition:3s;
+   background: linear-gradient(50deg,#29eb80,#48ff00);
+   transform: rotate(-45deg)translate(0,-100px);
+}
 
- .rock:hover{
-    color: #33dfa5;
- }
+.rock:hover{
+   color: #33dfa5;
+}
 
 .rock-lights:hover::before{
-    animation: effect 3s;
- }
+   animation: effect 3s;
+}
 
- /*PAPER*/
+/*PAPER*/
 .Paper{
-    display: grid;
-    place-items: center;
-    width: 247px;
-    height: 347px;
-    background: #171614;
-    border-radius: .08em;
-    z-index:1;
-    color: #858585;
-    overflow: hidden;
-    padding: 1em; 
-    text-align: center;
-    cursor: pointer;
-    transition: .5s ease;
+   display: grid;
+   place-items: center;
+   width: 247px;
+   height: 347px;
+   background: #171614;
+   border-radius: .08em;
+   z-index:1;
+   color: #858585;
+   overflow: hidden;
+   padding: 1em; 
+   text-align: center;
+   cursor: pointer;
+   transition: .5s ease;
 }
 
 .paper-lights{
-    display:grid;
-    place-items: center;
-    position: relative;
-    width: 255px;
-    height: 355px;
-    border-radius: 1em;
-    background: linear-gradient(50deg,#dbd9db,#00dbde);
-    overflow:hidden;
+   display:grid;
+   place-items: center;
+   position: relative;
+   width: 255px;
+   height: 355px;
+   border-radius: 1em;
+   background: linear-gradient(50deg,#dbd9db,#00dbde);
+   overflow:hidden;
 }
 
 .paper-lights::before{
-    content: "";
-    position: absolute;
-    width:450px;
-    height: 35px;
-    top:0;
-    right:35px;
-    transition:3s;
-    background: linear-gradient(50deg,#ff00ff,#ff029e);
-    transform: rotate(-45deg)translate(0,-100px);
- }
+   content: "";
+   position: absolute;
+   width:450px;
+   height: 35px;
+   top:0;
+   right:35px;
+   transition:3s;
+   background: linear-gradient(50deg,#ff00ff,#ff029e);
+   transform: rotate(-45deg)translate(0,-100px);
+}
 
 .paper:hover{
-    color: #f701ea;
- }
+   color: #f701ea;
+}
 
 .paper-lights:hover::before{
-    animation: effect 3s;
- }
+   animation: effect 3s;
+}
 
 
 /*SCISSOR*/
 .Scissor{
-    display: grid;
-    place-items: center;
-    width: 247px;
-    height: 347px;
-    background: #171614;
-    border-radius: .08em;
-    z-index:1;
-    color: #858585;
-    overflow: hidden;
-    padding: 1em; 
-    text-align: center;
-    cursor: pointer;
-    transition: .5s ease;
- }
+   display: grid;
+   place-items: center;
+   width: 247px;
+   height: 347px;
+   background: #171614;
+   border-radius: .08em;
+   z-index:1;
+   color: #858585;
+   overflow: hidden;
+   padding: 1em; 
+   text-align: center;
+   cursor: pointer;
+   transition: .5s ease;
+}
 
- .scissor-lights{
-    display:grid;
-    place-items: center;
-    position: relative;
-    width: 255px;
-    height: 355px;
-    border-radius: 1em;
-    background: linear-gradient(50deg,#833ab4,#fd1d1d,#fcb045);
-    overflow:hidden;
- }
+.scissor-lights{
+   display:grid;
+   place-items: center;
+   position: relative;
+   width: 255px;
+   height: 355px;
+   border-radius: 1em;
+   background: linear-gradient(50deg,#833ab4,#fd1d1d,#fcb045);
+   overflow:hidden;
+}
 
- .scissor-lights::before{
-    content: "";
-    position: absolute;
-    width:450px;
-    height: 35px;
-    top:0;
-    right:35px;
-    transition:3s;
-    background: linear-gradient(50deg,#00ff59,#02b3ff);
-    transform: rotate(-45deg)translate(0,-100px);
- }
+.scissor-lights::before{
+   content: "";
+   position: absolute;
+   width:450px;
+   height: 35px;
+   top:0;
+   right:35px;
+   transition:3s;
+   background: linear-gradient(50deg,#00ff59,#02b3ff);
+   transform: rotate(-45deg)translate(0,-100px);
+}
 
- .scissor:hover{
-    color: #ee4917;
- }
+.scissor:hover{
+   color: #ee4917;
+}
 
- .scissor-lights:hover::before{
-    animation: effect 3s;
- }
+.scissor-lights:hover::before{
+   animation: effect 3s;
+}
 
 /*the magic*/
- @keyframes effect{
-    100%{
-        transform:rotate(-45deg) translate(0,450px)
-    }
- }
-  
- 
- /*wanted to create space between the cards*/
-#parent-id{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
-   
+@keyframes effect{
+   100%{
+       transform:rotate(-45deg) translate(0,450px)
    }
+}
+ 
+
+/*wanted to create space between the cards*/
+#parent-id{
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 70px;
+   margin-bottom: 100px;
+  
+  }
 /*Need the header to be touching the top*/
- .header{
-    top:0%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 50px;
-    background-color: bisque;
- }
+.header{
+   top:0%;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   justify-content: center;
+   align-items: center;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bolder;
+   font-size: 50px;
+   background-color: bisque;
+}
 
- /*the words found in each button*/
- .rock{
-    font-size: 40px;
-    cursor: pointer;
- }
+/*the words found in each button*/
+.rock{
+   font-size: 40px;
+   cursor: pointer;
+}
 
- .paper{
-    font-size: 40px;
- }
+.paper{
+   font-size: 40px;
+}
 
- .scissor{
-    font-size: 40px;
- }
+.scissor{
+   font-size: 40px;
+}
 
- /*chart styles*/
- .chart{
-    background-color: bisque;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 100px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 25px;
-    text-align: center;
- }
+/*chart styles*/
+.chart{
+   background-color: bisque;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 100px;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bolder;
+   font-size: 25px;
+   text-align: center;
+}
 
- .wins-and-loses{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top:40px;
-    position:fixed;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    background-color: bisque;
-    width: 100%;  
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 30px;  
-    padding: 0.2rem;
+.wins-and-loses{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding-top:40px;
+   position:fixed;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   background-color: bisque;
+   width: 100%;  
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bolder;
+   font-size: 30px;  
+   padding: 0.2rem;
 }
 
 .roundCounter{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self:center;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-self:center;
 }
 
 .tie_{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self:center;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-self:center;
 }
 
 .loses{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self:center;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-self:center;
 }
 
 
 .wins{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self:center;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-self:center;
 }
 
 .card{
-    font-size: 30px;
-    font-weight: bolder;
-    width: 900px;
-    height: 130px;
-    border-radius: 0.5rem;
-    border-color: bisque;
-    border-style: solid;
-    color: bisque;
-    background-color:#001b3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   font-size: 30px;
+   font-weight: bolder;
+   width: 900px;
+   height: 130px;
+   border-radius: 0.5rem;
+   border-color: bisque;
+   border-style: solid;
+   color: bisque;
+   background-color:#001b3b;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .tally{
-  font-weight: bold;
-  color:bisque;
-  font-size: 20px;
-  height: 200px;
-  width: 300px;
-  border-color: rgb(184, 68, 22);
-  display: flex;
-  border-style: dotted;
-  margin-top: -70px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
+ font-weight: bold;
+ color:bisque;
+ font-size: 20px;
+ height: 200px;
+ width: 300px;
+ border-color: rgb(184, 68, 22);
+ display: flex;
+ border-style: dotted;
+ margin-top: -70px;
+ justify-content: center;
+ align-items: center;
+ border-radius: 1rem;
 }
 
 .tally-card{
-    display: flex;
-    flex-direction: row;
-    margin-top: 200px;
-    margin-left: 800px;
-    gap:80px;
+   display: flex;
+   flex-direction: row;
+   margin:auto; 
+   gap:80px;
 }
